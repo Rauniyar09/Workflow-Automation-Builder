@@ -23,14 +23,10 @@ State Management:
 
 Reasoning: The application uses a custom store via the useWorkflowStore hook to manage the state of nodes, edges, and workflow data. This helps maintain a centralized state, which can be accessed across components without prop drilling.
 Trade-offs: Using a global store for state management can make the code more difficult to test and maintain if it grows too large, but in this case, it's necessary for efficient state updates across multiple components.
-Form Handling:
 
-Reasoning: React Hook Form was used to handle form submission and validation in the NodeForm component. It provides a simple API for managing form state and avoids unnecessary re-renders.
-Trade-offs: While React Hook Form minimizes re-renders, it might require some learning curve for new developers unfamiliar with its API.
-CSS vs. Tailwind:
+React Hook Form was used to handle form submission and validation in the NodeForm component. It provides a simple API for managing form state and avoids unnecessary re-renders.
 
-Reasoning: Initially, Tailwind CSS was used for styling due to its utility-first approach, making it quick to style components directly in JSX. However, for this version, regular CSS was chosen for simplicity and better organization.
-Trade-offs: Tailwind allows for fast styling but can lead to messy code with many utility classes. Regular CSS provides more maintainable, reusable styles but might require more time upfront.
+
 
 
 
